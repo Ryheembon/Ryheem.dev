@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryheem's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="logo">RB</div>
+      <button class="mobile-menu-btn" title="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Ryheem Bonaparte</h1>
+      <h2>Technical Support Engineer & Web Developer</h2>
+      <p class="hero-description">Specializing in network solutions, cloud infrastructure, and web development</p>
+      <div class="hero-cta">
+        <a href="#projects" class="primary-btn">View My Work</a>
+        <a href="#contact" class="secondary-btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a <strong>Technical Support Engineer</strong> at Spectrum Enterprise, specializing in voice, internet, and video services with expertise in fiber and coax connections. My professional journey began as a <strong>Non-Commissioned Officer</strong> in the United States Army.
+          </p>
+          <p>
+            With a strong foundation in <strong>server and cloud administration</strong>, I'm progressing toward my Network+ certification and have gained proficiency in Linux administration, Ansible, IPv4 addressing, and VPN technologies.
+          </p>
+          <p>
+            Aspiring to become a <strong>Cloud and Server Engineer</strong>, I am dedicated to advancing my career in IT and making meaningful contributions through innovative solutions.
+          </p>
+          
+          <div class="stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-number" data-target="50">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="Profile.jpg" alt="Ryheem Bonaparte" class="profile-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-code"></i> Frontend Development</h3>
+          <div class="skill-items">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Tailwind</div>
+
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-server"></i> Backend & Cloud</h3>
+          <div class="skill-items">
+            <div class="skill">Python</div>
+            <div class="skill">Linux</div>
+            <div class="skill">AWS</div>
+            <div class="skill">Azure</div>
+            <div class="skill">Ansible</div>
+            <div class="skill">Docker</div>
+            <div class="skill">SQL</div>            <dive class="skills"></dive>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-network-wired"></i> Networking</h3>
+          <div class="skill-items">
+            <div class="skill">Juniper</div>
+            <div class="skill">Network Security</div>
+            <div class="skill">VPN</div>
+            <div class="skill">DNS</div>
+            <div class="skill">Cisco</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="movie.webp" alt="Movie Recommender">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-film"></i> Movie Recommender</h3>
+            <p>A web application that recommends movies based on user preferences and ratings.</p>
+            <div class="project-links">
+              <a href="https://ryheembon.github.io/Movie-Recommender-Application/" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="nba.webp" alt="NBA Analytics">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-basketball-ball"></i> NBA Analytics</h3>
+            <p>A data lake project using AWS services to analyze NBA player statistics and team performance.</p>
+            <div class="project-links">
+              <a href="https://github.com/Ryheembon/nba_analytics-" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="music.webp" alt="Music Player">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-music"></i> Music Player</h3>
+            <p>A web-based music player that integrates with Spotify API for searching and playing music.</p>
+            <div class="project-links">
+              <a href="https://github.com/Ryheembon/music_player" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="retro.webp" alt="Retro Choice Game">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-gamepad"></i> Retro Choice Game</h3>
+            <p>A Python-based adventure game featuring multiple story paths and outcomes.</p>
+            <div class="project-links">
+              <a href="https://github.com/Ryheembon/retro_game-test-.git" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="weather.png" alt="Weather App">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-cloud-sun"></i> Weather App</h3>
+            <p>A responsive weather application with real-time data and location-based forecasts.</p>
+            <div class="project-links">
+              <a href="https://ryheembon.github.io/Weather-app/" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-image">
+            <img src="calc.avif" alt="Online Calculator">
+          </div>
+          <div class="project-content">
+            <h3><i class="fas fa-calculator"></i> Online Calculator</h3>
+            <p>A sleek, responsive calculator built with HTML and CSS.</p>
+            <div class="project-links">
+              <a href="https://ryheembon.github.io/html-calculator-/" class="project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2 class="section-title">My Blog Journey</h2>
+      <div class="blog-content glass-card">
+        <div class="blog-text">
+          <h3><i class="fas fa-pen-fancy"></i> Daily Tech Adventures</h3>
+          <p>Follow my journey as I explore the world of technology, share coding insights, and document my learning experiences.</p>
+          <div class="blog-features">
+            <div class="blog-feature">
+              <i class="fas fa-code"></i>
+              <span>Coding Tutorials</span>
+            </div>
+            <div class="blog-feature">
+              <i class="fas fa-lightbulb"></i>
+              <span>Tech Insights</span>
+            </div>
+            <div class="blog-feature">
+              <i class="fas fa-book"></i>
+              <span>Learning Notes</span>
+            </div>
+          </div>
+          <a href="https://ryheembon.github.io/Blogging-Journey/" class="blog-link" target="_blank" rel="noopener">
+            Read My Blog
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="blog-decoration">
+          <div class="floating-element"></div>
+          <div class="floating-element"></div>
+          <div class="floating-element"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Feel free to reach out if you'd like to work together or just chat!</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ryheem-bonaparte/" class="social-link" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCyco1zCSbGa36ItTtSU6-9w" class="social-link" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.pinterest.com/ryheembon/" class="social-link" target="_blank" rel="noopener">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:ryheembon@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ryheem Bonaparte. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
