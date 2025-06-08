@@ -59,7 +59,7 @@
           
           <div class="stats-grid">
             <div class="stat-card glass-card">
-              <div class="stat-number" data-target="50">0</div>
+              <div class="stat-number" data-target="35">0</div>
               <div class="stat-label">Projects Completed</div>
             </div>
             <div class="stat-card glass-card">
@@ -225,31 +225,67 @@
         <div class="architecture-card glass-card">
           <h3>NBA Analytics Data Lake</h3>
           <div class="architecture-image">
-            <img src="nba-architecture.png" alt="NBA Analytics Architecture" class="architecture-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60" alt="NBA Analytics Architecture" class="architecture-img">
           </div>
           <div class="architecture-details">
-            <p>A scalable data pipeline using AWS services for processing and analyzing NBA statistics.</p>
+            <p>A modern data pipeline architecture for NBA analytics:</p>
+            <ul class="architecture-list">
+              <li><strong>Data Ingestion:</strong> NBA API → AWS Lambda → S3 Raw Zone</li>
+              <li><strong>Processing:</strong> AWS Glue → Data Transformation → S3 Processed Zone</li>
+              <li><strong>Analysis:</strong> Athena SQL Queries → QuickSight Dashboards</li>
+              <li><strong>ML Pipeline:</strong> SageMaker → Model Training → Predictions</li>
+            </ul>
             <div class="architecture-tech">
               <span class="tech-tag">AWS S3</span>
               <span class="tech-tag">Lambda</span>
               <span class="tech-tag">Glue</span>
               <span class="tech-tag">Athena</span>
+              <span class="tech-tag">SageMaker</span>
+              <span class="tech-tag">QuickSight</span>
             </div>
           </div>
         </div>
 
         <div class="architecture-card glass-card">
-          <h3>Cloud Music Player</h3>
+          <h3>Movie Recommender System</h3>
           <div class="architecture-image">
-            <img src="music-architecture.png" alt="Music Player Architecture" class="architecture-img">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&auto=format&fit=crop&q=60" alt="Movie Recommender Architecture" class="architecture-img">
           </div>
           <div class="architecture-details">
-            <p>Microservices architecture for a scalable music streaming platform.</p>
+            <p>A modern web application for personalized movie recommendations:</p>
+            <ul class="architecture-list">
+              <li><strong>Frontend:</strong> React components for UI/UX</li>
+              <li><strong>Backend:</strong> Node.js API with MongoDB</li>
+              <li><strong>ML Engine:</strong> Python-based recommendation system</li>
+              <li><strong>Features:</strong> User auth, movie search, personalized recommendations</li>
+            </ul>
             <div class="architecture-tech">
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Kubernetes</span>
-              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">React</span>
               <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="architecture-card glass-card">
+          <h3>Spotify Music Player</h3>
+          <div class="architecture-image">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=60" alt="Music Player Architecture" class="architecture-img">
+          </div>
+          <div class="architecture-details">
+            <p>A web-based music player with Spotify integration:</p>
+            <ul class="architecture-list">
+              <li><strong>Frontend:</strong> Vanilla JavaScript + HTML5 Audio API</li>
+              <li><strong>Backend:</strong> Node.js + Express Server</li>
+              <li><strong>API Integration:</strong> Spotify Web API</li>
+              <li><strong>Features:</strong> Song search, album art, Spotify links</li>
+            </ul>
+            <div class="architecture-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Spotify API</span>
+              <span class="tech-tag">JavaScript</span>
             </div>
           </div>
         </div>
@@ -416,20 +452,23 @@
       <div class="projects-grid">
         <div class="project-card glass-card">
           <div class="project-image">
-            <img src="nba.webp" alt="NBA Analytics">
+            <img src="https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?w=800&auto=format&fit=crop&q=60" alt="NBA Analytics">
           </div>
           <div class="project-content">
             <h3><i class="fas fa-database"></i> NBA Analytics Data Lake</h3>
-            <p>A comprehensive data lake project using AWS services (S3, Lambda, Glue) to analyze NBA player statistics and team performance.</p>
+            <p>A comprehensive data analytics platform that processes and analyzes NBA game statistics. Features include player performance tracking, team statistics visualization, and predictive analytics for game outcomes. Built with AWS services for scalable data processing and storage.</p>
             <div class="project-tech-stack">
-              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">AWS S3</span>
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">Data Lake</span>
-              <span class="tech-tag">ETL</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Data Visualization</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/Ryheembon/nba_analytics-" class="project-link" target="_blank" rel="noopener">
                 <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <i class="fas fa-chart-line"></i> Live Demo
               </a>
             </div>
           </div>
@@ -437,16 +476,16 @@
 
         <div class="project-card glass-card">
           <div class="project-image">
-            <img src="movie.webp" alt="Movie Recommender">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&auto=format&fit=crop&q=60" alt="Movie Recommender">
           </div>
           <div class="project-content">
-            <h3><i class="fas fa-film"></i> Movie Recommender System</h3>
-            <p>A full-stack application with ML-based recommendations, containerized with Docker and deployed using CI/CD pipelines.</p>
+            <h3><i class="fas fa-film"></i> CineMatch - Movie Recommender</h3>
+            <p>A modern web application that provides personalized movie recommendations using machine learning. Features include user authentication, movie browsing, personalized recommendations, and watchlist management.</p>
             <div class="project-tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">ML</span>
-              <span class="tech-tag">CI/CD</span>
+              <span class="tech-tag">MongoDB</span>
             </div>
             <div class="project-links">
               <a href="https://ryheembon.github.io/Movie-Recommender-Application/" class="project-link" target="_blank" rel="noopener">
@@ -461,16 +500,16 @@
 
         <div class="project-card glass-card">
           <div class="project-image">
-            <img src="music.webp" alt="Music Player">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=60" alt="Cloud Music Player">
           </div>
           <div class="project-content">
-            <h3><i class="fas fa-music"></i> Cloud Music Player</h3>
-            <p>A scalable music streaming service built with microservices architecture, using AWS services and container orchestration.</p>
+            <h3><i class="fas fa-music"></i> Spotify Music Player</h3>
+            <p>A web-based music player integrated with Spotify API, featuring song search, album art display, and direct Spotify links. Built with Node.js and Express for seamless music browsing experience.</p>
             <div class="project-tech-stack">
-              <span class="tech-tag">Microservices</span>
-              <span class="tech-tag">AWS</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Spotify API</span>
+              <span class="tech-tag">JavaScript</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/Ryheembon/music_player" class="project-link" target="_blank" rel="noopener">
