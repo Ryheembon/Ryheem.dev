@@ -68,12 +68,14 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  transition: var(--transition-smooth);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header.scrolled {
   background: rgba(10, 10, 10, 0.95);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
 }
 
 .nav-container {
@@ -86,12 +88,13 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 800;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: var(--transition-fast);
+  transition: transform 0.3s ease;
+  letter-spacing: 1px;
 }
 
 .logo:hover {
@@ -100,7 +103,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
 }
 
@@ -110,6 +113,8 @@ body {
   font-weight: 500;
   position: relative;
   padding: 0.5rem 0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 .nav-links a::after {
@@ -120,7 +125,11 @@ body {
   width: 0;
   height: 2px;
   background: var(--gradient-primary);
-  transition: var(--transition-fast);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
 }
 
 .nav-links a:hover::after {
@@ -910,6 +919,12 @@ section {
   color: var(--text-primary);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -919,18 +934,23 @@ section {
 
   .nav-links {
     position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: var(--bg-darker);
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
-    transition: var(--transition-smooth);
+    gap: 1.5rem;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .nav-links.active {
-    right: 0;
+    transform: translateY(0);
   }
 }
 
