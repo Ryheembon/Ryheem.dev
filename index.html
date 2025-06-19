@@ -600,37 +600,199 @@
     </div>
   </section>
 
-  <!-- Blog Section -->
+  <!-- Blog/Notes Section -->
   <section id="blog" class="blog">
     <div class="container">
-      <h2 class="section-title">My Blog Journey</h2>
-      <div class="blog-content glass-card">
+      <h2 class="section-title">Blog & Technical Notes</h2>
+      <div class="blog-content">
         <div class="blog-text">
-          <h3><i class="fas fa-pen-fancy"></i> Daily Tech Adventures</h3>
-          <p>Follow my journey as I explore the world of technology, share coding insights, and document my learning experiences.</p>
-          <div class="blog-features">
-            <div class="blog-feature">
-              <i class="fas fa-code"></i>
-              <span>Coding Tutorials</span>
-            </div>
-            <div class="blog-feature">
-              <i class="fas fa-lightbulb"></i>
-              <span>Tech Insights</span>
-            </div>
-            <div class="blog-feature">
-              <i class="fas fa-book"></i>
-              <span>Learning Notes</span>
+          <h3><i class="fas fa-blog"></i> Technical Insights & Learning Journey</h3>
+          <p>
+            Sharing my experiences, solutions to challenging problems, and insights from building real-world applications. 
+            From debugging complex network issues to architecting scalable systems, here's where I document my learning journey.
+          </p>
+        </div>
+        
+        <div class="blog-posts-grid">
+          <div class="blog-post glass-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="blog-post-header">
+                  <h4>Building My URL Shortener with Go & React</h4>
+                  <span class="blog-date">December 2024</span>
+                </div>
+                <p class="blog-excerpt">
+                  A complete walkthrough of building a full-stack URL shortener application. 
+                  From Go backend API design to React frontend implementation.
+                </p>
+                <div class="blog-tags">
+                  <span class="blog-tag">Go</span>
+                  <span class="blog-tag">React</span>
+                  <span class="blog-tag">REST API</span>
+                </div>
+                <div class="flip-hint">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Full-Stack Development Journey</h4>
+                <div class="detailed-description">
+                  <p><strong>The Challenge:</strong> Building my first full-stack application with Go and React.</p>
+                  <p><strong>Backend Implementation:</strong></p>
+                  <ul>
+                    <li>RESTful API design with Go's net/http package</li>
+                    <li>In-memory storage for URL mappings</li>
+                    <li>CORS implementation for frontend communication</li>
+                    <li>URL validation and short code generation</li>
+                  </ul>
+                  <p><strong>Frontend Features:</strong></p>
+                  <ul>
+                    <li>React components for URL input and display</li>
+                    <li>State management for user interactions</li>
+                    <li>Responsive design with modern CSS</li>
+                  </ul>
+                  <p><strong>Key Learning:</strong> Understanding the full development lifecycle from API design to user interface.</p>
+                </div>
+                <a href="https://github.com/Ryheembon/URL-shortener" target="_blank" rel="noopener" class="blog-read-more">View Project <i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-          <a href="https://ryheembon.github.io/Blogging-Journey/" class="blog-link" target="_blank" rel="noopener">
-            Read My Blog
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-        <div class="blog-decoration">
-          <div class="floating-element"></div>
-          <div class="floating-element"></div>
-          <div class="floating-element"></div>
+
+          <div class="blog-post glass-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="blog-post-header">
+                  <h4>Troubleshooting Fiber & Coax Networks at Spectrum</h4>
+                  <span class="blog-date">November 2024</span>
+                </div>
+                <p class="blog-excerpt">
+                  Real-world network troubleshooting experiences from my role as Technical Support Engineer. 
+                  Voice, internet, and video service diagnostics.
+                </p>
+                <div class="blog-tags">
+                  <span class="blog-tag">Networking</span>
+                  <span class="blog-tag">Fiber</span>
+                  <span class="blog-tag">Troubleshooting</span>
+                </div>
+                <div class="flip-hint">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Network Diagnostics Process</h4>
+                <div class="detailed-description">
+                  <p><strong>Daily Challenges:</strong> Diagnosing complex network issues for enterprise clients.</p>
+                  <p><strong>Common Issues & Solutions:</strong></p>
+                  <ul>
+                    <li>Fiber connection diagnostics and signal testing</li>
+                    <li>Coax network troubleshooting and maintenance</li>
+                    <li>Voice service configuration and VoIP issues</li>
+                    <li>Internet connectivity and bandwidth optimization</li>
+                    <li>Video service quality and streaming problems</li>
+                  </ul>
+                  <p><strong>Tools & Techniques:</strong></p>
+                  <ul>
+                    <li>Network analyzers and diagnostic equipment</li>
+                    <li>Signal strength testing and quality metrics</li>
+                    <li>Customer communication and technical explanation</li>
+                  </ul>
+                  <p><strong>Impact:</strong> Maintaining high service quality for enterprise customers and reducing downtime.</p>
+                </div>
+                <a href="#contact" class="blog-read-more">Discuss Experience <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-post glass-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="blog-post-header">
+                  <h4>Linux Administration & Server Management</h4>
+                  <span class="blog-date">October 2024</span>
+                </div>
+                <p class="blog-excerpt">
+                  My journey learning Linux administration, server configuration, and cloud infrastructure. 
+                  From basic commands to advanced system management.
+                </p>
+                <div class="blog-tags">
+                  <span class="blog-tag">Linux</span>
+                  <span class="blog-tag">Server Admin</span>
+                  <span class="blog-tag">Cloud</span>
+                </div>
+                <div class="flip-hint">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>System Administration Skills</h4>
+                <div class="detailed-description">
+                  <p><strong>Learning Path:</strong> Building expertise in Linux systems and cloud infrastructure.</p>
+                  <p><strong>Core Skills Developed:</strong></p>
+                  <ul>
+                    <li>Linux command line and shell scripting</li>
+                    <li>System monitoring and performance tuning</li>
+                    <li>User management and security configurations</li>
+                    <li>Package management and software installation</li>
+                    <li>Network configuration and firewall setup</li>
+                  </ul>
+                  <p><strong>Cloud & Automation:</strong></p>
+                  <ul>
+                    <li>Ansible for configuration management</li>
+                    <li>Docker containerization basics</li>
+                    <li>AWS and Azure cloud services</li>
+                  </ul>
+                  <p><strong>Goal:</strong> Progressing toward Network+ certification and Cloud Engineer role.</p>
+                </div>
+                <a href="#contact" class="blog-read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-post glass-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="blog-post-header">
+                  <h4>Military Leadership to Tech Career Transition</h4>
+                  <span class="blog-date">September 2024</span>
+                </div>
+                <p class="blog-excerpt">
+                  How my experience as a Non-Commissioned Officer in the US Army prepared me for a career in technology. 
+                  Leadership lessons applied to technical teams.
+                </p>
+                <div class="blog-tags">
+                  <span class="blog-tag">Leadership</span>
+                  <span class="blog-tag">Career</span>
+                  <span class="blog-tag">Military</span>
+                </div>
+                <div class="flip-hint">
+                  <i class="fas fa-sync-alt"></i> Click to flip
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h4>Leadership in Technology</h4>
+                <div class="detailed-description">
+                  <p><strong>Military Foundation:</strong> Leadership and teamwork skills from Army service.</p>
+                  <p><strong>Transferable Skills:</strong></p>
+                  <ul>
+                    <li>Leading cross-functional teams under pressure</li>
+                    <li>Problem-solving in high-stakes environments</li>
+                    <li>Clear communication with diverse audiences</li>
+                    <li>Training and mentoring junior personnel</li>
+                    <li>Attention to detail and process improvement</li>
+                  </ul>
+                  <p><strong>Tech Application:</strong></p>
+                  <ul>
+                    <li>Mentoring junior engineers and technicians</li>
+                    <li>Coordinating with multiple departments</li>
+                    <li>Managing critical network infrastructure</li>
+                    <li>Documentation and knowledge sharing</li>
+                  </ul>
+                  <p><strong>Vision:</strong> Combining military discipline with technical expertise for innovative solutions.</p>
+                </div>
+                <a href="#contact" class="blog-read-more">Connect With Me <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
