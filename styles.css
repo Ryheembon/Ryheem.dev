@@ -1577,3 +1577,256 @@ section {
     min-width: auto;
   }
 }
+
+/* Collapsible Article Styles */
+.article-section {
+  padding: 3rem 0;
+  background: var(--bg-darker);
+}
+
+.collapsible-article {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.article-summary {
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.article-summary:hover {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.summary-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.summary-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.article-date {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.summary-tags {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.summary-tags .tech-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.summary-text {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.expand-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--accent-purple);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.expand-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.expand-text {
+  font-weight: 500;
+}
+
+.article-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 2rem;
+}
+
+.article-details.expanded {
+  max-height: 1000px;
+  padding: 2rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-section {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.2rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-light-purple);
+}
+
+.detail-section h3 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-section li {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.detail-section li::before {
+  content: '•';
+  color: var(--accent-purple);
+  position: absolute;
+  left: 0;
+}
+
+.technical-details {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-purple);
+}
+
+.technical-details h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.tech-highlights {
+  display: grid;
+  gap: 1rem;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.highlight-item strong {
+  color: var(--accent-light-purple);
+}
+
+.project-impact {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  display: block;
+  overflow: visible;
+}
+
+.project-impact p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: var(--gradient-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(65, 88, 208, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .collapsible-article {
+    margin: 0 1rem;
+  }
+  
+  .article-summary {
+    padding: 1.5rem;
+  }
+  
+  .summary-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .summary-meta {
+    gap: 0.8rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .detail-section {
+    padding: 1rem;
+  }
+  
+  .technical-details {
+    padding: 1.2rem;
+  }
+  
+  .article-details.expanded {
+    padding: 1.5rem;
+  }
+}

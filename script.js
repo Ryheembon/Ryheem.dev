@@ -174,6 +174,25 @@ if (contactForm) {
   });
 }
 
+// Toggle article function
+function toggleArticle() {
+  const articleContent = document.getElementById('article-content');
+  const expandIcon = document.querySelector('.expand-icon');
+  const expandText = document.querySelector('.expand-text');
+  
+  if (articleContent.classList.contains('expanded')) {
+    // Collapse
+    articleContent.classList.remove('expanded');
+    expandIcon.classList.remove('rotated');
+    expandText.textContent = 'Click to read more';
+  } else {
+    // Expand
+    articleContent.classList.add('expanded');
+    expandIcon.classList.add('rotated');
+    expandText.textContent = 'Click to collapse';
+  }
+}
+
 // Add ripple effect to buttons
 document.querySelectorAll('.primary-btn, .secondary-btn, .submit-btn').forEach(button => {
   button.addEventListener('click', function(e) {
