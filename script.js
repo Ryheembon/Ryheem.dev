@@ -193,6 +193,68 @@ function toggleArticle() {
   }
 }
 
+// Project demo function
+function showProjectDemo() {
+  // Create a cool modal effect
+  const modal = document.createElement('div');
+  modal.className = 'project-modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>AI Resume Analyzer Demo</h3>
+        <button class="close-btn" onclick="this.parentElement.parentElement.parentElement.remove()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="demo-placeholder">
+          <i class="fas fa-robot"></i>
+          <h4>Interactive Demo Coming Soon!</h4>
+          <p>This will showcase the AI Resume Analyzer in action</p>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  document.body.appendChild(modal);
+  
+  // Add entrance animation
+  setTimeout(() => modal.classList.add('show'), 10);
+}
+
+// Timeline reveal animations
+function initTimelineAnimations() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  
+  const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Stagger the animation
+        setTimeout(() => {
+          entry.target.classList.add('reveal');
+        }, index * 200);
+      }
+    });
+  }, { threshold: 0.3 });
+  
+  timelineItems.forEach(item => timelineObserver.observe(item));
+}
+
+// Value cards floating animation
+function initFloatingCards() {
+  const valueCards = document.querySelectorAll('.value-card');
+  
+  valueCards.forEach((card, index) => {
+    card.style.animationDelay = `${index * 2}s`;
+  });
+}
+
+// Initialize all animations when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  initTimelineAnimations();
+  initFloatingCards();
+});
+
 // Add ripple effect to buttons
 document.querySelectorAll('.primary-btn, .secondary-btn, .submit-btn').forEach(button => {
   button.addEventListener('click', function(e) {
