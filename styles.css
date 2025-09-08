@@ -1540,6 +1540,12 @@ section {
   transition: var(--transition-fast);
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -2537,3 +2543,4 @@ section {
     padding: 1.5rem;
   }
 }
+
